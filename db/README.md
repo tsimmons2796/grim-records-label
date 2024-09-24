@@ -90,4 +90,8 @@ docker logs mongodb
 ```
 ### 10. Connecting to the DB
 
-Open Mongo Compass and connect to the mongo database running on the container using the connection string: "mongodb://admin:adminpassword@localhost:27018/?directConnection=true"
+Open Mongo Compass and connect to the mongo database running on the container using the connection string: 
+
+```bash
+mongodb://admin:adminpassword@localhost:27018/?directConnection=true
+```
