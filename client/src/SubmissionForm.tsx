@@ -1,4 +1,3 @@
-// SubmissionForm.tsx
 import { ChangeEvent, FC, FormEvent, useState } from "react";
 import { TextField, Button, Box, Typography } from "@mui/material";
 
