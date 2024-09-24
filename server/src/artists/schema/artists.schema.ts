@@ -1,9 +1,8 @@
-// src/cats/schemas/cat.schema.ts
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
 @Schema()
-export class Artists extends Document {
+export class Artist extends Document {
   @Prop()
   id: string;
 
@@ -20,4 +19,4 @@ export class Artists extends Document {
   albums: [];
 }
 
-export const ArtistSchema = SchemaFactory.createForClass(Artists);
+export const ArtistSchema = SchemaFactory.createForClass(Artist);
