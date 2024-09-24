@@ -1,22 +1,22 @@
-import { Artists } from './schema/artists.schema';
+import { Artist } from './schema/artists.schema';
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 
 @Injectable()
 export class ArtistsService {
-  constructor(@InjectModel(Artists.name) private artistModel: Model<Artists>) {}
+  constructor(@InjectModel(Artist.name) private artistModel: Model<Artist>) {}
 
-  async create(createArtistDto: Partial<Artists>): Promise<Artists> {
+  async create(createArtistDto: Partial<Artist>): Promise<Artist> {
     const createdCat = new this.artistModel(createArtistDto);
     return createdCat.save();
   }
 
-  async findAll(): Promise<Artists[]> {
+  async findAll(): Promise<Artist[]> {
     return this.artistModel.find().exec();
   }
 
-  async findOne(id: string): Promise<Artists> {
+  async findOne(id: string): Promise<Artist> {
     return this.artistModel.findById(id).exec();
   }
 
