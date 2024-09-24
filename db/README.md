@@ -14,11 +14,10 @@ This project sets up a MongoDB database with a `grim-records` database, includin
 
 Follow these steps to set up and run the MongoDB database locally:
 
-### 1. Clone the Repository
+### 1. Clone the folder into a directory
 
 ```bash
-git clone <repository-url>
-cd grim-records-db
+cd db
 ```
 
 ### 2. Build the Docker Image
