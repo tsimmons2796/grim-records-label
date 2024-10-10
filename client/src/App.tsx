@@ -225,7 +225,7 @@ export const App: FC = () => {
                   sx={{
                     position: "absolute",
                     inset: 0,
-                    backgroundColor: "rgba(0, 0, 0, 0.5)",
+                    backgroundColor: "rgba(0, 0, 0, 0.8)",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
@@ -251,7 +251,9 @@ export const App: FC = () => {
 
         {/* Featured Artists Section */}
         <Container sx={{ py: 4, px: 2 }}>
-          <Typography variant="h4" sx={{ textAlign: "center", mb: 4 }}>
+          <Typography
+            variant="h4"
+            sx={{ textAlign: "center", mb: 4, color: "white" }}>
             {activeTab === "new" ? NEW_ARTISTS_LABEL : POPULAR_ARTISTS_LABEL}
           </Typography>
           <Box
@@ -261,7 +263,7 @@ export const App: FC = () => {
               flexWrap: "wrap",
               gap: 4,
               padding: 4,
-              background: "rgba(255,255,255,0.7)", // Slight transparency for the background
+              background: "rgba(255,255,255,0.9)", // Slight transparency for the background
               boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
               borderRadius: "8px",
             }}>
@@ -314,7 +316,9 @@ export const App: FC = () => {
 
         {/* Upcoming Releases */}
         <Container sx={{ py: 4, px: 2 }}>
-          <Typography variant="h4" sx={{ textAlign: "center", mb: 4 }}>
+          <Typography
+            variant="h4"
+            sx={{ textAlign: "center", mb: 4, color: "white" }}>
             {UPCOMING_RELEASES_TITLE}
           </Typography>
           <Box
